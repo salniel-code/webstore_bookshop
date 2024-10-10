@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookdeals</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts to check js support and to change images to jpg in css if webp is not supported-->
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
+    <script src="js/modernizr-custom.js"></script>
+    <!-- Ikoner -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&Playfair+Display+SC:400,400i,700,700i,900,900i&Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container, everything inside is visible -->
+    <div class="container">
+
+        <header class="header" id="header">
+
+            <!-- Navigation/Menu for smaller device/screen-->
+            <nav class="small-menu">
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+                <ul class="small-menu-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All books</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            <!-- Small menu END -->
+
+
+            <!-- Logo and text inside header -->
+            <div class="header-text">
+                <a class="biglogo" href="index.html"> <img src="images/logotyp1small.svg" alt="logotype By The Book"></a>
+                <h3>- Old becomes new -</h3>
+            </div>
+            <!-- Navigation for bigger screens -->
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">All books</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Basket 1/ Main basket -->
+            <a id="basket" class="baskets" href="basket.html">0  <i class="fas fa-shopping-cart"></i></a>
+            <!-- Basket 2 (next to navigation -->
+            <a id="basket-small" class="baskets" href="basket.html"><i class="fas fa-shopping-cart"></i></a>
+        </header>
+
+        <main>
+
+
+            <!-- Product section -->
+            <section class="product-info">
+                <!-- h6 to avoid validation warnings -->
+                <h6 class="hide-this">hej</h6>
+
+                <!-- Product articles -->
+                <article class="product-article">
+                    <!-- Image container -->
+                    <div class="images-container">
+                        <div class="images-carousel">
+                            <!-- Icon to see previous image -->
+                            <i id="prev" class="fas fa-chevron-left"></i>
+
+                            <!-- First image -->
+                            <picture class="active">
+                                <source srcset="images/bok1-1.webp" type="image/webp">
+                                <source srcset="images/bok1-1.jpg" type="image/jpg">
+                                <img src="images/bok1-1.jpg" alt="bookcover">
+                            </picture>
+                            <!-- Second image -->
+                            <picture>
+                                <source srcset="images/bok1-2.webp" type="image/webp">
+                                <source srcset="images/bok1-2.jpg" type="image/jpg">
+                                <img src="images/bok1-2.jpg" alt="---">
+                            </picture>
+
+                            <!-- Icon to see next image -->
+                            <i id="next" class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <div class="book-deal">
+                            <h3>The Alchemist</h3>
+                            <p id="author-product-site" class="author">by <a href="" class="author-link">Paulo Coelho</a></p>
+                            <p id="price-product-site" class="price"><i class="fas fa-dollar-sign"></i><strong>12.04</strong> usd</p>
+                            <!-- Add to cart option -->
+                            <a id="add-to-cart-product-site" class="add-to-cart" href="product1.html">Add to cart</a>
+                        </div>
+                        <h6 class="book-description">Description</h6>
+                        <p class="book-info-text">Tells the story of one Oklahoma farm family, the Joads--driven from their homestead and forced to travel west to the promised land of California. Out of their trials and their repeated collisions against the hard realities of an
+                            America divided into Haves and Have-Nots evolves a drama that is intensely human yet majestic in its scale and moral vision, elemental yet plainspoken, tragic but ultimately stirring in its human dignity. A portrait of the
+                            conflict between the powerful and the powerless, of one man's fierce reaction to injustice..
+                            <br> <a class="read-more" href="">Read more</a>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Video -->
+                <article class="my-video">
+                    <video controls>
+                        <source src="video/alchemist.mp4">
+                    </video>
+                </article>
+                <!-- Book details/specification -->
+                <article class="product-more-info">
+                    <h6 class="product-details">Product details</h6>
+                    <p class="p-details"><strong>Language:</strong> Swedish</p>
+                    <p class="p-details"><strong>Publication date:</strong> 1939</p>
+                    <p class="p-details"><strong>ISBN:</strong> 9780143039433</p>
+                    <p class="p-details"><strong>Number of pages:</strong> 363</p>
+                </article>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+
+            <!-- Footer link-list -->
+            <ul class="footer-links">
+                <li class="explore">Explore</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">All products</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+            <ul class="footer-contact">
+                <li class="footer-contact-contact">Contact</li>
+                <li>Phone: +34 743 399</li>
+                <li>E-mail: contact@bythebook.com</li>
+            </ul>
+            <!-- Link top topp of page -->
+            <a class="back-to-top" href="#header"><i class="fas fa-arrow-up"></i></a>
+            <!-- Copyrights -->
+            <p class="p-footer"><i class="far fa-copyright"></i> 2020 By The Book</p>
+        </footer>
+
+        <!-- Container end -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

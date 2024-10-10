@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookdeals</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts to check js support and to change images to jpg in css if webp is not supported-->
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
+    <script src="js/modernizr-custom.js"></script>
+    <!-- Ikoner -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&Playfair+Display+SC:400,400i,700,700i,900,900i&Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container, everything inside is visible -->
+    <div class="container">
+
+        <header class="header" id="header">
+
+            <!-- Navigation/Menu for smaller device/screen-->
+            <nav class="small-menu">
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+                <ul class="small-menu-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All books</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            <!-- Small menu END -->
+
+            <!-- Logo and text inside header -->
+            <div class="header-text">
+                <a class="biglogo" href="index.html"> <img src="images/logotyp1small.svg" alt="logotype By The Book"></a>
+                <h3>- Old becomes new -</h3>
+            </div>
+
+            <!-- Navigation for bigger screens -->
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">All books</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Basket 1/ Main basket -->
+            <a id="basket" class="baskets" href="basket.html">0  <i class="fas fa-shopping-cart"></i></a>
+            <!-- Basket 2 (next to navigation -->
+            <a id="basket-small" class="baskets" href="basket.html"><i class="fas fa-shopping-cart"></i></a>
+
+        </header>
+
+        <main>
+
+            <!-- Staff picks of the month / heading-->
+            <h6 class="featured">New this week</h6>
+            <!-- Div to make a line -->
+            <div class="text-line"></div>
+
+            <!-- Product section -->
+            <section class="products">
+                <!-- h6 to avoid validation warnings -->
+                <h6 class="hide-this">hej</h6>
+                <!-- Product articles -->
+                <!-- 1 -->
+                <article class="product-articles">
+                    <a href="product1.html">
+                        <!-- Image, bookcover -->
+                        <picture>
+                            <source srcset="images/bok1-1.webp" type="image/webp">
+                            <source srcset="images/bok1-1.jpg" type="image/jpg">
+                            <img src="images/bok1-1.jpg" alt="bookcover the alchemist">
+                        </picture>
+                    </a>
+                    <!-- Product info -->
+                    <div class="product-info">
+                        <h6>The Alchemist</h6>
+                        <p class="author">by <a href="" class="author-link">Paulo Coelho</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>6.04</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+                <!-- 2 -->
+                <article class="product-articles">
+                    <a href="product2.html">
+                        <picture>
+                            <source srcset="images/bok2-1.webp" type="image/webp">
+                            <source srcset="images/bok2-1.jpg" type="image/jpg">
+                            <img src="images/bok2-1.jpg" alt="bookcover the impossible">
+                        </picture>
+                    </a>
+                    <div class="product-info">
+                        <h6>The Impossible</h6>
+                        <p class="author">by <a href="" class="author-link">Goran Sonnevi</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>4.52</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+                <!-- 3 -->
+                <article class="product-articles">
+                    <a href="product3.html">
+                        <picture>
+                            <source srcset="images/bok3-1.webp" type="image/webp">
+                            <source srcset="images/bok3-1.jpg" type="image/jpg">
+                            <img src="images/bok3-1.jpg" alt="bookcover Crime and punishment">
+                        </picture>
+                    </a>
+                    <div class="product-info">
+                        <h6>Crime And Punishment</h6>
+                        <p class="author">by <a href="" class="author-link">Fjodor Dostojevskij</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>7.04</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+                <!-- 4 -->
+                <article class="product-articles">
+                    <a href="product4.html">
+                        <picture>
+                            <source srcset="images/bok4-1.webp" type="image/webp">
+                            <source srcset="images/bok4-1.jpg" type="image/jpg">
+                            <img src="images/bok4-1.jpg" alt="bookcover Odyssen">
+                        </picture>
+                    </a>
+                    <div class="product-info">
+                        <h6>Odyssén</h6>
+                        <p class="author">by <a href="" class="author-link">Homeros</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>7.22</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+                <!-- 5 -->
+                <article class="product-articles">
+                    <a href="product5.html">
+                        <picture>
+                            <source srcset="images/bok5-1.webp" type="image/webp">
+                            <source srcset="images/bok5-1.jpg" type="image/jpg">
+                            <img src="images/bok5-1.jpg" alt="bookcover One">
+                        </picture>
+                    </a>
+                    <div class="product-info">
+                        <h6>One</h6>
+                        <p class="author">by <a href="" class="author-link">Richard Bach</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>5.03</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+                <!-- 6 -->
+                <article class="product-articles">
+                    <a href="product6.html">
+                        <picture>
+                            <source srcset="images/bok6-1.webp" type="image/webp">
+                            <source srcset="images/bok6-1.jpg" type="image/jpg">
+                            <img src="images/bok6-1.jpg" alt="bookcover pastures of heaven">
+                        </picture>
+                    </a>
+                    <div class="product-info">
+                        <h6>The Pastures Of Heaven</h6>
+                        <p class="author">by <a href="" class="author-link">John Steinbeck</a></p>
+                        <p class="price"><i class="fas fa-dollar-sign"></i><strong>6.34</strong> usd</p>
+                    </div>
+                    <!-- Add to cart option -->
+                    <a class="add-to-cart" href="product1.html">Add to cart</a>
+                    <!-- Image text "new item" -->
+                    <p class="new-item">New</p>
+                </article>
+            </section>
+
+            <!-- Info section on frontpage -->
+            <section class="info-index">
+                <h6 class="hide-this">hej</h6>
+                <!-- Info text/paragraph -->
+                <article class="info-index-text">
+                    <h2>Info</h2>
+                    <p class="p1">
+                        We are a new online bookstore where you can sell your old books and buy used books sold to us by other bookowners. If you wish to instead exchange one of your books with one we have in our inventory, contact us and we can make it happen. We always make
+                        sure that the books are in good condition before we sell or buy them, so you can be sure to get good quality from us. Perhaps there is a special book you're looking for that you can't find in our inventory, please write to us and
+                        we'll be sured to contact you if we get the book.
+                    </p>
+                </article>
+                <!-- Small pitch -->
+                <article class="info-index-pitch">
+                    <h2>An old book to you might be a new adventure for someone else</h2>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <!-- Footer link-list -->
+            <ul class="footer-links">
+                <li class="explore">Explore</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">All products</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+            <ul class="footer-contact">
+                <li class="footer-contact-contact">Contact</li>
+                <li>Phone: +34 743 399</li>
+                <li>E-mail: <a>contact@bythebook.com</a></li>
+            </ul>
+            <!-- Link top topp of page -->
+            <a class="back-to-top" href="#header"><i class="fas fa-arrow-up"></i></a>
+            <!-- Copyrights -->
+            <p class="p-footer"><i class="far fa-copyright"></i> 2020 By The Book</p>
+        </footer>
+
+        <!-- Container end -->
+    </div>
+
+</body>
+
+</html>

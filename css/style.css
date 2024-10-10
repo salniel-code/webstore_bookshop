@@ -1,0 +1,1108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    text-decoration: none;
+}
+
+.no-js .header {
+    background-image: url('../images/header6.jpg');
+}
+
+.no-js .info-index-pitch {
+    background-image: url("../images/infobg1.jpg");
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* color:#1b1c85; */
+
+.hide-this {
+    visibility: hidden;
+    display: none;
+}
+
+body {
+    font-family: "Lato", Arial, Verdana, sans-serif;
+    font-weight: normal;
+    line-height: 170%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    color: #ddb976;
+    font-size: 45px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.info-index-pitch h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1b1c85;
+}
+
+img,
+source,
+picture {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: #f5f7fa;
+}
+
+.container {
+    position: relative;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1000px;
+}
+
+
+/*---- Header -----*/
+
+header {
+    position: relative;
+    background-size: 85%;
+    height: 300px;
+}
+
+.webp .header {
+    background-image: url("../images/header6.webp")
+}
+
+.no-webp .header {
+    background-image: url('../images/header6.jpg');
+}
+
+#basket {
+    z-index: 99;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #c49e56;
+    color: #ffffff;
+}
+
+#basket:hover {
+    background-color: #c49d56;
+    transition: ease-in-out .3s;
+}
+
+.header-text {
+    width: 90%;
+    max-width: 1000px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.header-text h3 {
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0.2em;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-weight: normal;
+}
+
+
+/*-- Navigation smaller screens ---*/
+
+.small-menu {
+    z-index: 98;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 57px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px 3px #2424242a;
+}
+
+.small-menu-ul {
+    overflow: hidden;
+    max-height: 0;
+    margin-top: 1.8em;
+    background-color: #c49d56;
+}
+
+.small-menu-ul a {
+    color: #ffffff;
+    display: block;
+    width: 30%;
+    padding: 0.3em 0em 0.3em 0em;
+    font-size: 20px;
+    margin-left: 1em;
+    margin-bottom: 0.2em;
+    background-color: #c49d56;
+}
+
+.menu-btn {
+    visibility: hidden;
+}
+
+.menu-btn:checked~.small-menu-ul {
+    display: block;
+    max-height: 450px;
+    transition: all .2s ease-out;
+    padding: 1em 0em 1em 0em;
+}
+
+.menu-icon {
+    margin-top: 1em;
+    margin-left: 1.3em;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    float: left;
+}
+
+.nav-icon {
+    display: block;
+    margin-top: 0.7em;
+    background: #000000;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    transition: background .3s ease-out;
+}
+
+.nav-icon:before {
+    display: block;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 7px;
+    transition: all .2s ease-out;
+}
+
+.nav-icon:after {
+    display: block;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    transition: all .2s ease-out;
+}
+
+.menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+/*--- Nav smaller screens end ---*/
+
+
+/*---*/
+
+
+/*---- Main -----*/
+
+main {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.featured {
+    z-index: 96;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    padding-top: 2em;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text-line {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 1px;
+    background-color: #c49e56b4;
+}
+
+.products {
+    background-color: #ffffff;
+    display: grid;
+    padding: 1em 4em 1em 4em;
+}
+
+
+/* Product - Frontpage and All books */
+
+.product-articles {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.product-info {
+    margin: 0 auto;
+    margin-top: 0.3em;
+    width: 90%;
+    text-align: left;
+}
+
+.author-link {
+    color: #c49d56;
+    text-transform: initial;
+}
+
+.author-link:hover {
+    border-bottom: 1px solid #c49d56;
+    transition: ease-in-out 1s;
+}
+
+.price {
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0.4em 0em 0.7em 0em;
+    color: #1b1c85;
+}
+
+.price strong,
+.price i {
+    font-weight: 600;
+}
+
+.price strong {
+    font-size: 22px;
+    margin-left: 0.3em;
+}
+
+.price i {
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+}
+
+.add-to-cart {
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.4em 1.2em 0.3em 1.2em;
+    letter-spacing: 0.7px;
+    background-color: #c49e56dc;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    background-color: #c49d56;
+    transition: ease-in-out .4s;
+}
+
+.new-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 14px;
+    background-color: #1b1d85c0;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*--*/
+
+.info-index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-index-text {
+    background-color: #1b1c85;
+}
+
+.info-index-text .p1 {
+    margin-top: 0.7em;
+}
+
+.p1 {
+    line-height: 160%;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+}
+
+.webp .info-index-pitch {
+    background-image: url("../images/infobg1.webp");
+}
+
+.no-webp .info-index-pitch {
+    background-image: url("../images/infobg1.jpg");
+}
+
+.info-index-pitch {
+    position: relative;
+}
+
+.info-index-pitch h1 {
+    font-weight: 900;
+    color: #1b1c85;
+}
+
+
+/*---*/
+
+
+/* Product-site */
+
+.product-info {
+    display: grid;
+    padding: 0;
+    margin-top: 2em;
+}
+
+.product-article {
+    display: grid;
+    margin: 0;
+}
+
+
+/* image slideshow */
+
+.images-container {
+    position: relative;
+}
+
+#prev,
+#next {
+    z-index: 93;
+    position: absolute;
+    cursor: pointer;
+    font-size: 22px;
+    top: 45%;
+}
+
+#prev {
+    left: 2%;
+    color: #1b1c85;
+}
+
+#next {
+    right: 2%;
+    color: #1b1c85;
+}
+
+.images-carousel {
+    position: relative;
+}
+
+.images-carousel picture {
+    position: relative;
+    top: 0;
+    display: none;
+}
+
+.images-carousel picture.active {
+    display: inline-block;
+}
+
+
+/**/
+
+.book-info {
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.book-description {
+    padding-top: 1em;
+}
+
+.book-info-text {
+    padding-top: 0.5em;
+}
+
+.product-details {
+    margin-bottom: 0.5em;
+}
+
+.product-more-info {
+    padding-bottom: 3em;
+    border-top: 1px solid #d8d8d8;
+    margin: 3% 0% 0% 0%;
+    padding-top: 1.2em;
+}
+
+.read-more {
+    font-size: 13px;
+    color: #c49d56;
+}
+
+
+/* About */
+
+.p2 {
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+}
+
+.about-all {
+    display: grid;
+    padding: 2em 1em 6em 1em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-site h3,
+.about-me h3 {
+    font-weight: normal;
+}
+
+.about-site {
+    background-color: #1b1c85;
+    color: #ffffff;
+}
+
+.about-site h3 {
+    color: #ddb976;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+.about-me h3 {
+    color: #1b1c85;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+
+/**/
+
+
+/*- Checkout -*/
+
+.checkout {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2em 0em 2em 0em;
+}
+
+.items-basket {
+    display: grid;
+    width: 70%;
+    margin-left: 15%;
+    padding: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.photo-basket {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    width: 80%;
+}
+
+.name-basket {
+    display: block;
+    grid-column: 2/2;
+}
+
+#author-basket,
+#author-basket2 {
+    display: block;
+    grid-column: 2/2;
+}
+
+#price-basket,
+#price-basket2,
+#price-basket3 {
+    display: block;
+    grid-column: 4/4;
+}
+
+.remove-item {
+    display: block;
+    grid-column: 4/4;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.4em 1em 0.3em 1em;
+    letter-spacing: 0.7px;
+    background-color: #c49e56;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.total-cost {
+    width: 70%;
+    margin-left: 15%;
+    padding: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.order-form {
+    display: grid;
+    width: 70%;
+    margin-left: 15%;
+    padding: 1em;
+    grid-template-columns: 50% 50%;
+}
+
+.fullname,
+.mail,
+.streetname,
+.postcode,
+.city {
+    padding: 0.8em 1em;
+    font-size: 16px;
+    margin: 0.5em;
+    outline: 1px solid #868686;
+}
+
+.streetname {
+    grid-column: 1/3;
+}
+
+#place-order {
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.8em 1em;
+    margin: 0.5em;
+    letter-spacing: 0.7px;
+    background-color: #1b1c85;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+/*--*/
+
+
+/*--- Footer ---*/
+
+footer {
+    position: relative;
+    background-color: #c49d56;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.explore {
+    font-size: 17px;
+    color: #000000;
+    padding: 2em 0.2em 0.4em 0.2em;
+}
+
+.footer-links {
+    padding: 2em 0em 1.5em 2.4em;
+}
+
+footer a {
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #ffffff;
+    transition: ease-in-out .4s;
+}
+
+.footer-contact-contact {
+    padding: 2em 0.2em 0.4em 0em;
+}
+
+.footer-contact {
+    padding: 2em 0em 1.5em 2.4em;
+    color: #000000;
+}
+
+.back-to-top {
+    position: absolute;
+    color: #ffffff;
+    right: 0.5em;
+    top: 0.5em;
+    padding: 0.5em;
+    width: 23px;
+    height: 30px;
+    font-size: 22px;
+}
+
+.p-footer {
+    grid-column: 1/4;
+    font-size: 13px;
+    padding: 1em 0em 1em 0em;
+    grid-column: 1/4;
+    text-align: center;
+    border-top: 1px solid #ffffff38;
+}
+
+
+/*---*/
+
+
+/*-------------------------SMALL SCREEN---------------------------------------------------------------*/
+
+@media screen and (max-width:500px) {
+    /* Hide */
+    #main-nav,
+    #basket-small {
+        display: none;
+        visibility: hidden;
+    }
+    body p {
+        line-height: 170%;
+    }
+    /*-*/
+    /*--- Header ----*/
+    header {
+        margin-top: 57px;
+    }
+    .header h3 {
+        font-size: 24px;
+    }
+    .text-line {
+        top: 397px;
+    }
+    /*---*/
+    /*--- Main ---*/
+    /* Frontpage + All books */
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info-index {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info-index-text {
+        padding: 1em 2em 2em 2em;
+    }
+    .info-index-pitch h2 {
+        padding: 0.5em 0.7em 0.7em 0.7em;
+    }
+    /*-*/
+    /* Product-site */
+    .product-info {
+        grid-template-columns: repeat(1, 1fr);
+        width: 87%;
+    }
+    .my-video {
+        border-top: 1px solid #dddddd;
+        margin: 3% 0% 0% 0%;
+    }
+    video {
+        margin: 5% 0% 1% 0%;
+    }
+    /*-*/
+    /* About site */
+    .about-all {
+        padding-top: 0.5em;
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-site {
+        border-top: 1px solid #c49d56;
+        padding-bottom: 2em;
+        padding-left: 0;
+    }
+    .about-site h3 {
+        margin-top: 0.4em;
+        padding-left: 0.6em;
+        padding-right: 0.4em;
+        margin-bottom: 0.2em;
+    }
+    .about-site .p2 {
+        padding-right: 1.2em;
+        padding-left: 1.2em;
+        margin-bottom: 1.5em;
+    }
+    .about-me {
+        padding: 0em 1.2em 2em 1.2em;
+        border-bottom: 1px solid #1b1c85;
+    }
+    .about-me h2 {
+        margin-top: 0.4em;
+        margin-bottom: 0.2em;
+    }
+    .about-me .p2 {
+        margin-bottom: 1.5em;
+    }
+    /**/
+    /* Checkout */
+    .items-basket,
+    .total-cost,
+    .order-form {
+        width: 89%;
+        margin-left: 0%;
+    }
+    .photo-basket {
+        width: 70%;
+        margin-left: 15%;
+        grid-column: 1/6;
+    }
+    #author-basket,
+    #author-basket2 {
+        font-size: 15px;
+        grid-column: 1/6;
+    }
+    .name-basket {
+        margin-top: 0.3em;
+        margin-left: 0;
+        grid-column: 1/6;
+    }
+    .fullname,
+    .mail,
+    .streetname,
+    .postcode,
+    .city,
+    #place-order {
+        grid-column: 1/3;
+    }
+    /**/
+    /*---*/
+    /*--- Footer ---*/
+    .footer-links {
+        grid-row: 1/1;
+        padding-left: 1.2em;
+    }
+    .footer-contact {
+        grid-row: 2/2;
+        padding-left: 1.2em;
+        padding-top: 0;
+        margin-bottom: 3em;
+    }
+    .footer-contact-contact {
+        padding: 0em 0.2em 0.4em 0em;
+    }
+    /*---*/
+}
+
+
+/*-------------------------MEDIUM SCREEN---------------------------------------------------------------*/
+
+@media screen and (min-width: 500px) and (max-width:800px) {
+    /* Hide */
+    #main-nav,
+    #basket-small {
+        display: none;
+        visibility: hidden;
+    }
+    /*-*/
+    /*--- Header ----*/
+    header {
+        margin-top: 57px;
+    }
+    .text-line {
+        top: 397px;
+    }
+    /*---*/
+    /*--- Main ---*/
+    /* Frontpage + All books */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info-index {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info-index-text {
+        padding: 1.5em 6em 2em 6em;
+    }
+    .info-index-pitch {
+        padding: 1em 3em 1em 3em;
+    }
+    .info-index-pitch h2 {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+    /*-*/
+    /* Product-site */
+    .my-video {
+        border-top: 1px solid #dddddd;
+        margin: 3% 0% 0% 0%;
+    }
+    video {
+        margin: 4% 0% 1% 0%;
+    }
+    .product-info {
+        display: block;
+        overflow: hidden;
+    }
+    .product-article {
+        grid-template-columns: 100%;
+        position: relative;
+        margin: 0;
+    }
+    .images-container {
+        display: block;
+        width: 50%;
+    }
+    .book-deal {
+        position: absolute;
+        top: 0;
+        left: 55%;
+    }
+    .book-info {
+        width: 100%;
+    }
+    #price-product-site {
+        margin-top: 1em;
+    }
+    .book-description {
+        position: relative;
+        width: 90%;
+        max-width: 470px;
+    }
+    .book-info-text {
+        margin-top: 0.3em;
+        width: 90%;
+        max-width: 470px;
+        position: relative;
+    }
+    .product-more-info {
+        display: grid;
+        grid-template-columns: 270px 50%;
+    }
+    .product-details {
+        grid-column: 1/3;
+    }
+    /*-*/
+    /*---*/
+    /* About */
+    .about-site,
+    .about-me {
+        padding: 0em 1em 3em 1em;
+    }
+    .about-all {
+        padding: 0;
+        min-height: 50vh;
+        margin: 0;
+    }
+    /*-*/
+    /* Checkout */
+    .items-basket,
+    .total-cost,
+    .order-form {
+        width: 80%;
+        margin-left: 7%;
+    }
+    /**/
+}
+
+
+/*-------------------------LARGE SCREEN---------------------------------------------------------------*/
+
+@media screen and (min-width:800px) {
+    .small-menu {
+        display: none;
+        visibility: hidden;
+    }
+    body {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .container {
+        width: 90%;
+        box-shadow: 0px 0px 15px 5px #1b1b1b38;
+    }
+    /*--- Header ---*/
+    #basket {
+        background-color: #c49e569c;
+    }
+    #basket-small {
+        z-index: 99;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        color: #ffffff;
+        background-color: #c49d56;
+        padding: 0.74em 2em 0.7em 2em;
+    }
+    #main-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    #main-nav ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #main-nav ul li {
+        position: relative;
+        display: inline-block;
+    }
+    #main-nav ul li a {
+        display: block;
+        color: #000000;
+        padding: 0.7em 1em 0.7em 1em;
+    }
+    #main-nav ul li a:hover {
+        transition: ease-in-out .3s;
+        background-color: #c49e56c7;
+        color: #ffffff;
+    }
+    /*---*/
+    /*--- Main ---*/
+    /* Frontpage + All books */
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product-articles:hover {
+        z-index: 95;
+        margin: 0;
+        transition: ease-in-out .5s;
+        border-bottom: 1px solid #ffffff;
+    }
+    .info-index-text {
+        padding: 2em 4em 2.5em 4em;
+    }
+    .info-index-pitch h2 {
+        position: relative;
+        padding: 1em 1.5em 2em 1.5em;
+    }
+    /*-*/
+    /*- All products -*/
+    #all-products-container {
+        margin-top: 1em;
+    }
+    /*-*/
+    /*- Product-site -*/
+    .product-info {
+        padding: 2em 0em 1em 0em;
+        margin-top: 0em;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-article {
+        grid-template-columns: 40% 60%;
+        margin: 0% 3% 0% 2%;
+    }
+    .product-more-info {
+        margin: 3% 3% 0% 2%;
+        padding-top: 1em;
+    }
+    .my-video {
+        border-top: 1px solid #e2e2e2;
+        margin: 2% 3% 0% 2%;
+    }
+    video {
+        width: 50%;
+        min-width: 400px;
+        margin: 3% 0% 0% 0%;
+    }
+    .book-info {
+        margin-left: 2em;
+    }
+    .book-description {
+        margin-top: 0.7em;
+    }
+    .book-info-text {
+        margin-top: 0.2em;
+    }
+    .product-details {
+        margin-bottom: 0em;
+        grid-column: 1/3;
+    }
+    .product-more-info {
+        display: grid;
+        grid-template-columns: 270px 50%;
+    }
+    .product-details {
+        margin-bottom: 0.5em;
+    }
+    /* About */
+    .about-all {
+        padding: 0;
+        min-height: 50vh;
+        margin: 0;
+    }
+    .about-site,
+    .about-me {
+        height: 100%;
+        margin-top: 0;
+        padding: 1.5em 1.5em 3em 1.5em;
+    }
+    /*-*/
+}
+
+
+/*-*/
+
+
+/*---*/
